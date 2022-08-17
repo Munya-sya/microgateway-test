@@ -2,7 +2,7 @@ pipeline {
   agent any
   
   environment {
-      TOOL = tool name: '<tool>', type:     'com.cloudbees.jenkins.plugins.customtools.CustomTool/micro-gw/mgwtoolkit'
+      TOOL = tool name: '<tool>', type: 'com.cloudbees.jenkins.plugins.customtools.CustomTool/micro-gw/mgwtoolkit'
   }
   stages {
     stage('Build') {
