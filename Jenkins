@@ -1,0 +1,15 @@
+pipeline {
+  agent any
+  
+  environment {
+      TOOL = tool name: '<tool>', type:     'com.cloudbees.jenkins.plugins.customtools.CustomTool/micro-gw/mgwtoolkit'
+  }
+  stages {
+    stage('Build') {
+      steps {
+        echo 'Running build automation'
+        sh './micro-gw '
+      }
+    }
+  }
+}
