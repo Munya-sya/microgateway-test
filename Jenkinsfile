@@ -5,7 +5,7 @@ pipeline {
     stage('Build') {
       steps {
         echo 'Running build automation'
-        sh 'micro-gw_HOME'
+        sh 'micro-gw_HOME/bin/micro-gw'
       }
     }
   }
